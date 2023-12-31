@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="center-content">
+            <img src="{% static 'images/grambazaar.jpg' %}" alt="Your Logo">
+        </div>
+        <form action="{% url 'home' %}" method="post">
+            {% csrf_token %}
+            <div class="input-container">
+                <label for="email-username">Email<i class="fas fa-envelope"></i></label>
+                <input type="text" id="email-username" name="email-username" placeholder="Enter your email or username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password <i class="fas fa-lock"></i></label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="new-to-account">
+            <p>New to account?</p>
+            <a href="{% url 'signup' %}">
+                <button>Create your account</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

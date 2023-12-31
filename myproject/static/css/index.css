@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkslategray;
+}
+.center-content {
+    text-align: center;
+     /* Change font family for center content */
+}
+.center-content h1 {
+    font-size: 100px; /* Increased font size for h1 */
+    margin: 0;
+    font-family: 'Rubik Doodle Shadow';
+}
+.center-content p {
+    font-size: 20px; /* Increased font size for p */
+    margin: 10px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}

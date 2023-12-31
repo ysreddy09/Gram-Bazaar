@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gram Bazaar</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center-content">
+        <h1>Gram Bazaar</h1>
+        <p>Creates a warm and traditional feel, referencing village markets.</p>
+        <a href="{% url 'signup' %}" class="btn">Signup</a>
+        <a href="{% url 'login' %}" class="btn">Login</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+
+body {
+
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+        font-family: 'Roboto', sans-serif;
+}
+.fa {
+    font-family: 'Font Awesome 5 Free';
+}
+.center-content img {
+    max-width: 150px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-bottom: 20px; /* Add spacing below the logo */
+}
+
+.login-container {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 350px;
+    padding-right: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.radio-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    padding: 10px;
+}
+
+.new-to-account {
+    margin-top: 20px;
+}
+
+.new-to-amazon p {
+    margin-bottom: 10px;
+}
+
+.new-to-amazon button {
+   /* Update font family for this section */
+    background-color: white;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.new-to-amazon button:hover {
+    background-color: #f4f4f4;
+}
