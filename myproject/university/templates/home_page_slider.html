@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="https://via.placeholder.com/600x400?text=Image+1" alt="Image 1">
+            <img src="https://via.placeholder.com/600x400?text=Image+2" alt="Image 2">
+            <img src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3">
+        </div>
+        <button class="prev" onclick="prevSlide()">Prev</button>
+        <button class="next" onclick="nextSlide()">Next</button>
+    </div>
+    <script src="{% static 'js/slider.js' %}"></script>
+</body>
+</html>

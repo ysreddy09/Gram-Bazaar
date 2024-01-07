@@ -1,0 +1,39 @@
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .about-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('/static/images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .website-name {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-family: initial;
+        }
+
+        .description {
+            font-size: 18px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: initial;
+        }

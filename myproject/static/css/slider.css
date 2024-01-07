@@ -1,0 +1,44 @@
+*{
+margin:0;
+}
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .slides {
+            height: 500px;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+
+        img {
+            scroll-snap-align: start;
+            width: 100%;
+            height: auto;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background: #333;
+            color: white;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }

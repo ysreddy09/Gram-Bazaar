@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <title>Profile</title>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-details">
+      <div class="profile-image-container">
+        <div class="profile-image" id="profileImage">
+          <img src="path/to/default_image.jpg" >
+          <div class="overlay" id="overlay">
+            <label for="changePhoto" class="change-photo">Change Photo</label>
+            <input type="file" id="changePhoto" style="display: none;">
+            <button class="remove-photo" id="removePhoto">Remove Photo</button>
+          </div>
+        </div>
+      </div>
+      <form class="personal-info-form">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+        </div>
+        <div class="form-group">
+          <label for="postalCode">Postal Code:</label>
+          <input type="text" id="postalCode" name="postalCode" placeholder="Enter Postal Code (6 digits)"
+            pattern="\d{6}" title="Please enter 6 digits" required>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="text" id="phoneNumber" name="phoneNumber"
+            placeholder="Enter Phone Number (10 digits with 91 country code)" pattern="^91\d{10}$"
+            title="Please enter 10 digits with 91 country code" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" placeholder="Enter Address" required></textarea>
+        </div>
+        <button type="submit" class="update-btn">Update</button>
+      </form>
+    </div>
+  </div>
+    <script src="{% static 'js/profile.js' %}"></script>
+</body>
+</html>

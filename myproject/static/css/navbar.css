@@ -1,17 +1,14 @@
-* {
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
+*{
+    margin: 0px;
+    padding: 0px;
 }
-
 .navbar {
     height: 50px;
-    background-color: black;
+    background-color:#333;
     display: flex;
     font-family: sans-serif;
     border-radius: 2px;
 }
-
 .navbar-container {
     display: flex;
     align-items: center;
@@ -19,24 +16,18 @@
     width: 100%;
     justify-content: space-between;
     padding: 0 1rem;
-    /* Add padding to control space around the content */
 }
-
 .navbar-logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
 }
-
 .navbar-search {
     display: flex;
     align-items: center;
     position: relative;
     flex: 1;
-    /* Expand to take available space */
-    /* Increase the max width as needed */
 }
-
 .navbar-search input {
     flex: 1;
     background-color: #333;
@@ -47,48 +38,39 @@
     font-size: 1rem;
     width:650px;
 }
-
 .navbar-search button {
     border: none;
     background-color: transparent;
     color: white;
-
     font-size: 1rem;
 }
-
 .navbar-nav {
     display: flex;
     align-items: center;
     list-style: none;
-    /* padding:5px; */
 }
-
 .navbar-nav li {
     margin-left: 1rem;
 }
-
 .navbar-nav a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
-
 .nav-item:hover {
     background-color: #444;
 }
 .nav-item{
-    padding:5px;
+    padding:10px;
 }
 .navbar-profile {
     position: relative;
 }
-
 .profile-icon {
     font-size: 24px; /* Adjust icon size as needed */
     color: white;
     cursor: pointer;
 }
-
 .profile-options {
     display: none;
     position: absolute;
@@ -96,20 +78,17 @@
     right: 0;
     background-color: #333;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 }
-
 .profile-options a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
 }
-
 .profile-options a:hover {
     background-color: #444;
 }
-
 .navbar-profile:hover .profile-options {
     display: block;
 }
