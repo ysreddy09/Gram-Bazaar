@@ -19,6 +19,7 @@
   height: 280px;
   object-fit: cover;
   margin-bottom: 10px;
+  border-radius:20px;
 }
 .shop-link h3 {
   margin-bottom: 10px;
